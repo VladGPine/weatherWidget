@@ -1,5 +1,79 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form {
+  margin: 20px 50px;
+}
+
 .weather-wrapper {
-  width: 350px;
-  background: lightgray;
-  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 150px;
+  background: rgba(243, 241, 239, 0.2);
+  padding: 8px 20px;
+  margin-left: 50px;
+  border-radius: 5px; 
+}
+
+p {
+  color: rgb(87, 87, 87);
+  font-weight: bold;
+}
+
+p:first-child {
+  margin-bottom: 5px;
+}
+
+.city-temp {
+  display: flex;
+  justify-content: space-around;
+  font-size: 34px;
+  font-weight: normal;
+}
+
+hr {
+  width: 100%;
+  border-top: 0;
+  border-left: 0;
+  border-color: rgba(211, 210, 210, 0.5);
+}
+
+span {
+  font-size: 14px;
+  transform: translateY(6px)
+}
+
+img {
+  width: 50px;
+}
+
+.city-hum,
+.city-wind,
+.city-pres {
+  display: flex;
+  color: gray;
+  font-size: 14px;
+}
+
+.city-hum::before {
+  content: url(./water-16.png)
+}
+
+.city-wind::before {
+  content: url(./wind-16.png)
+}
+
+.city-pres::before {
+  content: url(./pressure-16.png)
+}
+
+.city-hum::before,
+.city-wind::before,
+.city-pres::before {
+  margin-right: 5px;
 }
